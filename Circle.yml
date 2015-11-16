@@ -1,3 +1,5 @@
+general:
+  build_dir: api
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
