@@ -1,6 +1,10 @@
 machine:
  java:
   version: oraclejdk8
+ 
+dependencies:
+ pre:
+  - gem install bundler --pre
   
 test:
  override:
