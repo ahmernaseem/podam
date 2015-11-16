@@ -1,7 +1,6 @@
 machine:
-ruby:
- version:
-  1.8.7-p358-falcon-perf
+  java:
+    version: oraclejdk8
 test:
  override:
   - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
