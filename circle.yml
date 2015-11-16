@@ -1,6 +1,12 @@
 machine:
-  java:
-    version: oraclejdk8
+ java:
+  version: openjdk8
+	
+dependencies:
+ pre:
+  - gem uninstall bundler
+  - gem install bundler --pre
+
 test:
  override:
   - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
